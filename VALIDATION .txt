@@ -1,0 +1,31 @@
+RAPPORT DE VALIDATION — AFRIC FROID INDUSTRIEL FIELD DESK
+Date: 10 octobre 2026
+
+TESTS AUTOMATISES RÉELLEMENT EXÉCUTÉS DANS CHROMIUM (Playwright)
+- Chargement HTML et exécution des scripts : OK.
+- Console JavaScript / erreurs non gérées sur le parcours testé : aucune.
+- Conversion P/T R134a: -10 °C -> 1,01 bar(g) : OK selon table intégrée.
+- Conversion inverse: 1,01 bar(g) -> -10 °C : OK selon table intégrée.
+- Conversion 4–20 mA, 12 mA sur 0–100 -> 50 : OK.
+- Puissance triphasée 400 V, 10 A, cos φ 0,8 -> 5,543 kW : OK.
+- Conversion 1 bar -> 14,5038 psi : OK.
+- PID de base, SP 10, PV 4, Kp 2, Ki/Kd 0 -> sortie brute 12 : OK.
+- Pré-dimensionnement de câble DC : sortie calculée : OK.
+- Assistant local: réponse par règles pour symptôme HP : OK.
+- Parcours HP: 6 étapes affichées et observation enregistrée : OK.
+- Procédure multimètre pressostat d’huile : OK.
+- Création et affichage d’un rapport local en session navigateur : OK.
+- Import DXF ASCII : LINE/CIRCLE reconnus et rendus : OK.
+- Export DXF généré puis réimporté : 10 entités reconnues : OK.
+- Navigation mobile jusqu’au module caméra : OK.
+- Archive ZIP : test d’intégrité réussi.
+- Syntaxe JavaScript : node --check réussi.
+
+NON TESTÉ / NON CERTIFIÉ
+- Accès physique à la caméra sur un téléphone réel (nécessite HTTPS et autorisation utilisateur).
+- Installation PWA et cache hors ligne sur tous les navigateurs.
+- Persistance localStorage sur un déploiement distant (les tests de rapport en contexte de test sans origine ont utilisé le repli mémoire).
+- Exactitude thermodynamique pour réglage/mise en service; la table P/T est arrondie/interpolée.
+- Validation des schémas par rapport à une machine précise ou aux plans d’une société.
+- Certification industrielle, conformité réglementaire et cybersécurité multi-utilisateur.
+- IA générative/analyse d’image : non incluse. L’assistant est un moteur local de règles.

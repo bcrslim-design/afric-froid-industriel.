@@ -1,0 +1,14 @@
+{
+  "name": "AFRIC FROID INDUSTRIEL — Field Desk",
+  "short_name": "AFI Field",
+  "description": "Outils terrain hors ligne pour électricité, froid industriel, automatisme et régulation.",
+  "lang": "fr-TN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071827",
+  "theme_color": "#071827",
+  "icons": [
+    {"src":"assets/afric-froid-logo.jpeg","sizes":"any","type":"image/jpeg","purpose":"any"}
+  ]
+}
